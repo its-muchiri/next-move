@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Syne:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#b6c7e5", "on-tertiary": "#203149", "secondary-fixed": "#d6e4f9", "error": "#ffb4ab", "primary-fixed-dim": "#ffb689", "outline-variant": "#574237", "on-primary": "#512300", "on-secondary-fixed-variant": "#3a4859", "surface-tint": "#ffb689", "on-surface-variant": "#dec1b1", "tertiary-fixed-dim": "#b6c7e5", "on-error": "#690005", "inverse-surface": "#e1e2ea", "surface-container-low": "#191c21", "error-container": "#93000a", "on-secondary-container": "#a8b6ca", "on-primary-fixed": "#321300", "tertiary-fixed": "#d4e3ff", "surface-container-lowest": "#0b0e13", "surface-dim": "#101319", "surface-variant": "#32353b", "surface-bright": "#36393f", "secondary": "#bac8dc", "primary-container": "#e97619", "on-secondary-fixed": "#0f1c2c", "on-tertiary-fixed": "#091c33", "surface-container-high": "#272a30", "on-primary-fixed-variant": "#743500", "surface-container-highest": "#32353b", "inverse-on-surface": "#2d3036", "on-primary-container": "#4e2200", "primary": "#ffb689", "on-surface": "#e1e2ea", "on-tertiary-fixed-variant": "#374860", "on-tertiary-container": "#1e2f47", "surface-container": "#1d2025", "outline": "#a58c7d", "secondary-fixed-dim": "#bac8dc", "inverse-primary": "#984800", "on-secondary": "#243141", "background": "#101319", "tertiary-container": "#8697b3", "primary-fixed": "#ffdbc8", "secondary-container": "#3a4859", "on-background": "#e1e2ea", "surface": "#101319", "on-error-container": "#ffdad6" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-sm": "0.5rem", "gutter-sm": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-2xl": "4rem", "margin-mobile": "1.25rem", "space-xl": "2.5rem", "gutter": "1.5rem", "margin": "2.5rem" }, "fontFamily": { "title": ["Syne"], "body-lg": ["Geist"], "body-md": ["Geist"], "body-sm": ["Geist"], "display-mobile": ["Syne"], "headline-md": ["Syne"], "label-sm": ["Geist"], "display": ["Syne"], "headline-sm": ["Syne"], "headline-lg": ["Syne"], "headline-lg-mobile": ["Syne"], "label-md": ["Geist"] }, "fontSize": { "title": ["1.125rem", { "lineHeight": "1.5rem", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "letterSpacing": "0", "fontWeight": "400" }], "body-md": ["1rem", { "lineHeight": "1.5rem", "letterSpacing": "0", "fontWeight": "400" }], "body-sm": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0", "fontWeight": "400" }], "display-mobile": ["2.75rem", { "lineHeight": "3rem", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-md": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.12em", "fontWeight": "600" }], "display": ["4.5rem", { "lineHeight": "4.75rem", "letterSpacing": "-0.04em", "fontWeight": "800" }], "headline-sm": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "0", "fontWeight": "600" }], "headline-lg": ["3rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg-mobile": ["2rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.08em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-[#014C8F]/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between"><a class="flex items-center gap-space-md cursor-pointer" data-path="home" href="#"><img alt="Next Move Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBCm9ilanvp09xDDIDPnCmDunp516WlmRTdsrCKyxYvx8tZWc_E-dAArBg6TSFHTRdeVikeyQB1FCkv1Zk6BWmdTPpIjxl1rGP8UoSltdwJMKx3v_scsxJPbla0fXhzgCMFQlZpQENVqXvBF2FP1jKdY3hZCdfGJyLN7EhE0ZbBeFdSH1tzWuerXGM_yoRZ0ODe4rae-dR2pt1qLcat3w42b2WNsHF_-G5JCW4TqNao"/><span class="font-title text-title text-primary-fixed tracking-tight uppercase">Next Move</span></a><nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-primary-fixed font-bold border-b-2 border-primary-container border-[#E97619]"><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-primary-fixed transition-colors py-space-xs" data-path="home" href="#">Home</a><a aria-current="page" class="transition-colors py-space-xs text-primary-fixed font-bold border-b-2 border-primary-container border-[#E97619]" data-path="programs" href="#">Programs</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-primary-fixed transition-colors py-space-xs" data-path="about" href="#">About</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-primary-fixed transition-colors py-space-xs" data-path="pricing" href="#">Pricing</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-primary-fixed transition-colors py-space-xs" data-path="resources" href="#">Resources</a><a class="font-body-sm text-body-sm text-secondary-fixed hover:text-primary-fixed transition-colors py-space-xs" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="inline-flex items-center justify-center bg-primary-container bg-[#E97619] text-[#0A2540] font-label-md text-label-md uppercase px-space-md py-space-sm rounded-xl transition-all duration-200 hover:bg-white hover:text-[#0A2540] active:scale-95 font-semibold" data-path="assessment" href="#">Book a Free Assessment</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full font-body-md text-[#0A2540]">
+</head>
+<body data-page="programs">
+<!-- 1. Page Header (Royal Blue #014C8F background, cream #EFDDC9 text) -->
+<section class="relative w-full bg-[#014C8F] text-[#EFDDC9] px-margin-mobile lg:px-margin pt-14 pb-16 overflow-hidden">
+<!-- Subtle architectural grid watermark -->
+<div class="absolute inset-0 opacity-[0.04] pointer-events-none bg-[radial-gradient(#EFDDC9_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="relative max-w-7xl mx-auto flex flex-col items-start gap-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EFDDC9]/10 text-[#EFDDC9] font-label-sm text-label-sm tracking-widest uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-[#E97619]"></span>
+        Structured Mastery Curriculum
+      </div>
+<h1 class="font-headline-lg text-headline-lg lg:text-display text-[#EFDDC9] tracking-tight leading-none">
+        Coaching &amp; Programs
+      </h1>
+<p class="font-body-lg text-body-lg text-[#EFDDC9]/90 max-w-2xl font-light">
+        A clear path from your first checkmate to tournament strength. Methodical calculation, strategic discipline, and title-grade mentorship engineered for measurable rating growth.
+      </p>
+<!-- Diagnostic notation quick-strip -->
+<div class="w-full pt-8 flex items-center justify-between text-xs tracking-widest text-[#EFDDC9]/60 font-mono overflow-x-auto select-none border-t border-[#EFDDC9]/15 mt-4">
+<span>1. e4 e5</span>
+<span class="hidden sm:inline">2. Nf3 Nc6</span>
+<span>3. Bb5 a6</span>
+<span class="hidden md:inline">4. Ba4 Nf6</span>
+<span>5. O-O Be7</span>
+<span class="hidden sm:inline">6. Re1 b5</span>
+<span>7. Bb3 d6</span>
+<span class="hidden lg:inline">8. c3 O-O</span>
+<span class="text-[#E97619] font-semibold">9. h3! [±]</span>
+</div>
+</div>
+</section>
+<!-- 2. Progression Path Section (Cream #EFDDC9 background) -->
+<section class="w-full bg-[#EFDDC9] px-margin-mobile lg:px-margin py-space-2xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-10">
+<div class="flex flex-col gap-2 max-w-3xl">
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-[#014C8F] font-semibold">Rating Architecture</span>
+<h2 class="font-headline-lg text-headline-lg text-[#014C8F]">The Progression Path</h2>
+<p class="font-body-lg text-body-lg text-[#0A2540]">
+          A systematic rating ascent engineered for deep conceptual retention. Progress through defined rating milestones with targeted benchmarks at every ply.
+        </p>
+</div>
+<!-- Horizontal 4-step Visual with Staircase Elevation -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+<!-- Connecting Line for desktop -->
+<div class="hidden lg:block absolute top-12 left-16 right-16 h-[2px] bg-[#014C8F]/20 -z-0"></div>
+<!-- Step 1: Starter -->
+<div class="relative z-10 flex flex-col bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+<div class="flex items-center justify-between mb-4">
+<span class="w-10 h-10 rounded-xl bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center font-bold text-sm font-mono">01</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#DCE8F4] text-[#014C8F]">&lt; 1000 ELO</span>
+</div>
+<div class="mb-2">
+<!-- Pawn Icon (Stroke SVG) -->
+<svg class="w-8 h-8 text-[#014C8F] stroke-current fill-none stroke-[1.75]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<circle cx="12" cy="6" r="3"></circle>
+<path d="M9 13a3 3 0 0 1 6 0c0 2-1 3-1 5H10c0-2-1-3-1-5z"></path>
+<path d="M7 21h10"></path>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#014C8F] mb-1">Starter</h3>
+<p class="font-body-sm text-body-sm text-[#0A2540] mb-4">Tactical awareness &amp; board geometry basics.</p>
+<div class="mt-auto pt-3 border-t border-[#014C8F]/10 flex items-center justify-between text-xs text-[#0A2540]/80">
+<span>Pawn Structure 101</span>
+<span class="material-symbols-outlined text-sm text-[#014C8F]">arrow_forward</span>
+</div>
+</div>
+<!-- Step 2: Foundation -->
+<div class="relative z-10 flex flex-col bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 lg:-translate-y-2">
+<div class="flex items-center justify-between mb-4">
+<span class="w-10 h-10 rounded-xl bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center font-bold text-sm font-mono">02</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#DCE8F4] text-[#014C8F]">1000–1400 ELO</span>
+</div>
+<div class="mb-2">
+<!-- Knight Icon (Stroke SVG) -->
+<svg class="w-8 h-8 text-[#014C8F] stroke-current fill-none stroke-[1.75]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<path d="M19 19H5a2 2 0 0 1-2-2c0-3.5 2.5-6.5 6-7.5l1-3.5 3-2 3.5 1.5-1 3.5 3 2.5v5a2 2 0 0 1-2 2z"></path>
+<circle cx="9.5" cy="8.5" r="1"></circle>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#014C8F] mb-1">Foundation</h3>
+<p class="font-body-sm text-body-sm text-[#0A2540] mb-4">Positional fundamentals &amp; clean 2-3 ply calculation.</p>
+<div class="mt-auto pt-3 border-t border-[#014C8F]/10 flex items-center justify-between text-xs text-[#0A2540]/80">
+<span>King &amp; Pawn Endgames</span>
+<span class="material-symbols-outlined text-sm text-[#014C8F]">arrow_forward</span>
+</div>
+</div>
+<!-- Step 3: Improver -->
+<div class="relative z-10 flex flex-col bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 lg:-translate-y-4 ring-2 ring-[#014C8F]/20">
+<div class="flex items-center justify-between mb-4">
+<span class="w-10 h-10 rounded-xl bg-[#014C8F] text-[#EFDDC9] flex items-center justify-center font-bold text-sm font-mono">03</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#E97619] text-[#0A2540]">1400–1800 ELO</span>
+</div>
+<div class="mb-2">
+<!-- Rook Icon (Stroke SVG) -->
+<svg class="w-8 h-8 text-[#014C8F] stroke-current fill-none stroke-[1.75]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<path d="M5 20h14"></path>
+<path d="M6 17h12"></path>
+<path d="M7 17v-7l2-2h6l2 2v7"></path>
+<path d="M4 6h3v3H4z"></path>
+<path d="M10 6h4v3h-4z"></path>
+<path d="M17 6h3v3h-3z"></path>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#014C8F] mb-1">Improver</h3>
+<p class="font-body-sm text-body-sm text-[#0A2540] mb-4">Deep prophylactic thinking &amp; structural planning.</p>
+<div class="mt-auto pt-3 border-t border-[#014C8F]/10 flex items-center justify-between text-xs text-[#014C8F] font-semibold">
+<span>Repertoire Engineering</span>
+<span class="material-symbols-outlined text-sm text-[#014C8F]">arrow_forward</span>
+</div>
+</div>
+<!-- Step 4: Competitive -->
+<div class="relative z-10 flex flex-col bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 lg:-translate-y-6">
+<div class="flex items-center justify-between mb-4">
+<span class="w-10 h-10 rounded-xl bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center font-bold text-sm font-mono">04</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-[#014C8F] text-[#EFDDC9]">1800+ FIDE</span>
+</div>
+<div class="mb-2">
+<!-- Queen/Crown Icon (Stroke SVG) -->
+<svg class="w-8 h-8 text-[#014C8F] stroke-current fill-none stroke-[1.75]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<path d="M3 8l4 9h10l4-9-5 4-4-6-4 6-5-4z"></path>
+<path d="M4 21h16"></path>
+<circle cx="3" cy="8" r="1"></circle>
+<circle cx="21" cy="8" r="1"></circle>
+<circle cx="12" cy="6" r="1"></circle>
+<circle cx="7" cy="12" r="0.5"></circle>
+<circle cx="17" cy="12" r="0.5"></circle>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#014C8F] mb-1">Competitive</h3>
+<p class="font-body-sm text-body-sm text-[#0A2540] mb-4">Tournament prep, dynamic calculation &amp; endgame precision.</p>
+<div class="mt-auto pt-3 border-t border-[#014C8F]/10 flex items-center justify-between text-xs text-[#0A2540]/80">
+<span>Master Repertoires</span>
+<span class="material-symbols-outlined text-sm text-[#014C8F]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Four Detailed Tier Sections (Stacked vertically, alternating Cream / Light Blue) -->
+<div class="w-full flex flex-col">
+<!-- TIER 1: Starter (Cream #EFDDC9) -->
+<section class="w-full bg-[#EFDDC9] px-margin-mobile lg:px-margin py-space-2xl border-t border-[#014C8F]/10">
+<div class="max-w-7xl mx-auto">
+<div class="bg-white rounded-xl p-8 lg:p-10 shadow-sm flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch">
+<!-- Left column: Tier identity & target audience -->
+<div class="lg:w-5/12 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-3">
+<span class="px-3 py-1 rounded-full text-xs font-semibold bg-[#DCE8F4] text-[#014C8F]">Tier 01</span>
+<span class="text-xs font-mono uppercase tracking-wider text-[#0A2540]/70">&lt; 1000 Elo Entry Point</span>
+</div>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-[#014C8F] mb-4">Starter Program</h3>
+<div class="bg-[#DCE8F4]/50 rounded-xl p-5 mb-6">
+<span class="block text-xs font-semibold uppercase tracking-wider text-[#014C8F] mb-1">Who it's for</span>
+<p class="font-body-md text-body-md text-[#0A2540]">
+                  Absolute beginners and casual players who want to build a rock-solid foundation without getting trapped in useless opening memorization.
+                </p>
+</div>
+</div>
+<!-- Outcome Highlight Box -->
+<div class="rounded-xl p-4 bg-[#EFDDC9]/40 border border-[#014C8F]/10 flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-[#014C8F] text-[#EFDDC9] flex items-center justify-center shrink-0">
+<svg class="w-5 h-5 stroke-current fill-none stroke-[2]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+</svg>
+</div>
+<div>
+<span class="block text-xs font-bold text-[#014C8F] uppercase tracking-wide">Target Outcome</span>
+<p class="font-body-sm text-body-sm text-[#0A2540]">
+                  Confident piece coordination, instant blunder awareness, and rapid promotion to 1000+ Elo.
+                </p>
+</div>
+</div>
+</div>
+<!-- Right column: Curriculum checklist & action -->
+<div class="lg:w-7/12 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-[#014C8F]/10 pt-6 lg:pt-0 lg:pl-12">
+<div>
+<h4 class="font-label-md text-label-md tracking-wider uppercase text-[#014C8F] font-semibold mb-4">
+                What You'll Learn &amp; Execute
+              </h4>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">Rules &amp; Board Geometry:</strong>
+<span class="text-[#0A2540]/90"> Intuitive sight of diagonals, open files, and the critical central four squares.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">Essential Checkmate Patterns:</strong>
+<span class="text-[#0A2540]/90"> Back-rank, ladder, support-mate, and queen kiss-of-death execution.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">Opening Principles:</strong>
+<span class="text-[#0A2540]/90"> Rapid minor piece development, center stake with pawns, and King safety before move 10.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">Blunder Prevention Filter:</strong>
+<span class="text-[#0A2540]/90"> A 3-step physical checklist to stop hanging pieces to simple 1-move captures.</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 pt-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center bg-[#E97619] text-[#0A2540] font-semibold text-sm px-6 py-3 rounded-xl hover:bg-[#014C8F] hover:text-[#EFDDC9] transition-colors" href="#assessment">
+                Enroll in Starter
+              </a>
+<span class="text-xs text-[#0A2540]/70 font-mono">Curriculum includes 12 video modules + live tactical drills</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TIER 2: Foundation (Light Blue #DCE8F4) -->
+<section class="w-full bg-[#DCE8F4] px-margin-mobile lg:px-margin py-space-2xl">
+<div class="max-w-7xl mx-auto">
+<div class="bg-white rounded-xl p-8 lg:p-10 shadow-sm flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch">
+<!-- Left column -->
+<div class="lg:w-5/12 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-3">
+<span class="px-3 py-1 rounded-full text-xs font-semibold bg-[#EFDDC9] text-[#014C8F]">Tier 02</span>
+<span class="text-xs font-mono uppercase tracking-wider text-[#0A2540]/70">1000–1400 Elo Intermediate</span>
+</div>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-[#014C8F] mb-4">Foundation Tier</h3>
+<div class="bg-[#DCE8F4]/50 rounded-xl p-5 mb-6">
+<span class="block text-xs font-semibold uppercase tracking-wider text-[#014C8F] mb-1">Who it's for</span>
+<p class="font-body-md text-body-md text-[#0A2540]">
+                  Club and online players stuck between 1000–1400 Elo seeking an airtight calculation protocol to stop erratic play.
+                </p>
+</div>
+</div>
+<!-- Outcome Highlight Box -->
+<div class="rounded-xl p-4 bg-[#EFDDC9]/40 border border-[#014C8F]/10 flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-[#014C8F] text-[#EFDDC9] flex items-center justify-center shrink-0">
+<svg class="w-5 h-5 stroke-current fill-none stroke-[2]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle>
+<circle cx="12" cy="12" r="6"></circle>
+<circle cx="12" cy="12" r="2"></circle>
+</svg>
+</div>
+<div>
+<span class="block text-xs font-bold text-[#014C8F] uppercase tracking-wide">Target Outcome</span>
+<p class="font-body-sm text-body-sm text-[#0A2540]">
+                  Elimination of catastrophic calculation leaks and a dependable 1400 Elo tournament baseline.
+                </p>
+</div>
+</div>
+</div>
+<!-- Right column -->
+<div class="lg:w-7/12 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-[#014C8F]/10 pt-6 lg:pt-0 lg:pl-12">
+<div>
+<h4 class="font-label-md text-label-md tracking-wider uppercase text-[#014C8F] font-semibold mb-4">
+                What You'll Learn &amp; Execute
+              </h4>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">Core Tactical Motifs:</strong>
+<span class="text-[#0A2540]/90"> Systematic recognition of forks, pins, skewers, deflection, and discovered batteries.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">King &amp; Pawn Endgames:</strong>
+<span class="text-[#0A2540]/90"> The square rule, key squares, opposition techniques, and converting material edges cleanly.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">Structured Candidate Moves:</strong>
+<span class="text-[#0A2540]/90"> Kotov's calculation branch model scaled down to reliable, rapid 2-to-3 ply checks.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">Pacing &amp; Clock Control:</strong>
+<span class="text-[#0A2540]/90"> Purging impulsive blitz muscle memory and developing a healthy classical tempo.</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 pt-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center bg-[#E97619] text-[#0A2540] font-semibold text-sm px-6 py-3 rounded-xl hover:bg-[#014C8F] hover:text-[#EFDDC9] transition-colors" href="#assessment">
+                Enroll in Foundation
+              </a>
+<span class="text-xs text-[#0A2540]/70 font-mono">Includes weekly diagnostic puzzle sheets &amp; annotated model games</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TIER 3: Improver (Cream #EFDDC9) - FEATURED / MOST POPULAR -->
+<section class="w-full bg-[#EFDDC9] px-margin-mobile lg:px-margin py-space-2xl relative">
+<div class="max-w-7xl mx-auto">
+<!-- Prominent Card Framing for the Featured Tier -->
+<div class="relative bg-white rounded-xl p-8 lg:p-10 shadow-lg ring-2 ring-[#014C8F] flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch">
+<!-- Floating Badge -->
+<div class="absolute -top-3.5 right-8 bg-[#E97619] text-[#0A2540] text-xs font-bold uppercase tracking-wider px-3.5 py-1 rounded-full shadow-sm">
+            Most Popular Tier
+          </div>
+<!-- Left column -->
+<div class="lg:w-5/12 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-3">
+<span class="px-3 py-1 rounded-full text-xs font-semibold bg-[#014C8F] text-[#EFDDC9]">Tier 03</span>
+<span class="text-xs font-mono uppercase tracking-wider text-[#014C8F] font-bold">1400–1800 Elo Advanced</span>
+</div>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-[#014C8F] mb-4">Improver Program</h3>
+<div class="bg-[#DCE8F4] rounded-xl p-5 mb-6">
+<span class="block text-xs font-semibold uppercase tracking-wider text-[#014C8F] mb-1">Who it's for</span>
+<p class="font-body-md text-body-md text-[#0A2540]">
+                  Experienced club competitors and ambitious online players aiming to break through plateaus and cross into elite 1600–1800+ territory.
+                </p>
+</div>
+</div>
+<!-- Outcome Highlight Box -->
+<div class="rounded-xl p-4 bg-[#EFDDC9]/50 border border-[#014C8F]/20 flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-[#014C8F] text-[#EFDDC9] flex items-center justify-center shrink-0">
+<svg class="w-5 h-5 stroke-current fill-none stroke-[2]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<path d="M18 20V10M12 20V4M6 20v-6"></path>
+</svg>
+</div>
+<div>
+<span class="block text-xs font-bold text-[#014C8F] uppercase tracking-wide">Target Outcome</span>
+<p class="font-body-sm text-body-sm text-[#0A2540]">
+                  Strategic game control, ability to outcalculate equal opponents, and sustained rating velocity.
+                </p>
+</div>
+</div>
+</div>
+<!-- Right column -->
+<div class="lg:w-7/12 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-[#014C8F]/10 pt-6 lg:pt-0 lg:pl-12">
+<div>
+<h4 class="font-label-md text-label-md tracking-wider uppercase text-[#014C8F] font-semibold mb-4">
+                What You'll Learn &amp; Execute
+              </h4>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#014C8F] text-[#EFDDC9] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">Positional Prophylaxis:</strong>
+<span class="text-[#0A2540]/90"> Karpovian piece restraint, denying counterplay before launching your own offensive operations.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#014C8F] text-[#EFDDC9] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">Pawn Structure Mastery:</strong>
+<span class="text-[#0A2540]/90"> Navigating Isolated Queen Pawn (IQP) imbalances, minority attacks, and dynamic pawn breaks.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#014C8F] text-[#EFDDC9] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">Deep Candidate Trees:</strong>
+<span class="text-[#0A2540]/90"> Calculating 5+ plies ahead in sharp middlegame structures with disciplined blunder checks.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#014C8F] text-[#EFDDC9] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">Custom Repertoire Engineering:</strong>
+<span class="text-[#0A2540]/90"> Constructing harmonious White and Black opening files suited to your tactical temperament.</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 pt-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center bg-[#E97619] text-[#0A2540] font-semibold text-sm px-6 py-3 rounded-xl hover:bg-[#014C8F] hover:text-[#EFDDC9] transition-colors shadow-sm" href="#assessment">
+                Apply for Improver Tier
+              </a>
+<span class="text-xs text-[#014C8F] font-semibold">Includes 1-on-1 monthly grandmaster sparring session</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TIER 4: Competitive (Light Blue #DCE8F4) -->
+<section class="w-full bg-[#DCE8F4] px-margin-mobile lg:px-margin py-space-2xl">
+<div class="max-w-7xl mx-auto">
+<div class="bg-white rounded-xl p-8 lg:p-10 shadow-sm flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch">
+<!-- Left column -->
+<div class="lg:w-5/12 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-3">
+<span class="px-3 py-1 rounded-full text-xs font-semibold bg-[#014C8F] text-[#EFDDC9]">Tier 04</span>
+<span class="text-xs font-mono uppercase tracking-wider text-[#0A2540]/70">1800+ FIDE Master Track</span>
+</div>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-[#014C8F] mb-4">Competitive Tier</h3>
+<div class="bg-[#DCE8F4]/50 rounded-xl p-5 mb-6">
+<span class="block text-xs font-semibold uppercase tracking-wider text-[#014C8F] mb-1">Who it's for</span>
+<p class="font-body-md text-body-md text-[#0A2540]">
+                  Serious tournament contenders, FIDE title aspirants, and national competitors seeking master-grade preparation and psychological stamina.
+                </p>
+</div>
+</div>
+<!-- Outcome Highlight Box -->
+<div class="rounded-xl p-4 bg-[#EFDDC9]/40 border border-[#014C8F]/10 flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-[#014C8F] text-[#EFDDC9] flex items-center justify-center shrink-0">
+<svg class="w-5 h-5 stroke-current fill-none stroke-[2]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+<path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+<path d="M4 22h16"></path>
+<path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+<path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+<path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path>
+</svg>
+</div>
+<div>
+<span class="block text-xs font-bold text-[#014C8F] uppercase tracking-wide">Target Outcome</span>
+<p class="font-body-sm text-body-sm text-[#0A2540]">
+                  Tournament-grade poise, master-level opening conviction, and direct trajectory toward CM, FM, and NM title norms.
+                </p>
+</div>
+</div>
+</div>
+<!-- Right column -->
+<div class="lg:w-7/12 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-[#014C8F]/10 pt-6 lg:pt-0 lg:pl-12">
+<div>
+<h4 class="font-label-md text-label-md tracking-wider uppercase text-[#014C8F] font-semibold mb-4">
+                What You'll Learn &amp; Execute
+              </h4>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">Deep Opponent Scouting:</strong>
+<span class="text-[#0A2540]/90"> Analyzing rival PGN databases to expose stylistic vulnerabilities and craft lethal psychological traps.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">Technical Rook &amp; Minor Piece Endgames:</strong>
+<span class="text-[#0A2540]/90"> Lucena, Philidor, Vancura, and nuanced opposite-colored bishop squeezes.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">Classical Time Allocation &amp; Stress Management:</strong>
+<span class="text-[#0A2540]/90"> Maintaining tactical precision during sudden death and round 7 time trouble.</span>
+</div>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-5 h-5 rounded-full bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center shrink-0 mt-0.5">
+<svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+</span>
+<div>
+<strong class="font-semibold text-[#0A2540]">Comprehensive Post-Mortem Diagnostics:</strong>
+<span class="text-[#0A2540]/90"> Rigorous Stockfish/Leela combined evaluation blended with human master intuition.</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-4 pt-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center bg-[#E97619] text-[#0A2540] font-semibold text-sm px-6 py-3 rounded-xl hover:bg-[#014C8F] hover:text-[#EFDDC9] transition-colors" href="#assessment">
+                Apply for Competitive Tier
+              </a>
+<span class="text-xs text-[#0A2540]/70 font-mono">Admission requires FIDE or USCF verified rating profile</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- 4. "Choose Your Format" Section (Cream #EFDDC9 background) -->
+<section class="w-full bg-[#EFDDC9] px-margin-mobile lg:px-margin py-space-2xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-12">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto gap-3">
+<span class="font-label-sm text-label-sm tracking-widest uppercase text-[#014C8F] font-semibold">Delivery Architecture</span>
+<h2 class="font-headline-lg text-headline-lg text-[#014C8F]">Choose Your Format</h2>
+<p class="font-body-lg text-body-lg text-[#0A2540]">
+          Tailored mentorship adapted to your learning rhythm, personal schedule, and competitive tournament calendar.
+        </p>
+</div>
+<!-- 3 Side-by-side Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+<!-- Format 1: 1-on-1 Private Coaching -->
+<div class="bg-white rounded-xl p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center mb-6">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[2]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+<circle cx="9" cy="7" r="4"></circle>
+<path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#014C8F] mb-3">1-on-1 Private Coaching</h3>
+<p class="font-body-sm text-body-sm text-[#0A2540] mb-6">
+              High-intensity, hyper-customized instruction designed around your specific psychological and positional tendencies.
+            </p>
+<ul class="space-y-3 mb-6 text-sm text-[#0A2540]">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-sm text-[#014C8F] mt-0.5">check_circle</span>
+<span>Dedicated Grandmaster or IM mentor</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-sm text-[#014C8F] mt-0.5">check_circle</span>
+<span>Customized training syllabus &amp; PGN file delivery</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-sm text-[#014C8F] mt-0.5">check_circle</span>
+<span>Real-time board analysis &amp; live sparring feedback</span>
+</li>
+</ul>
+<div class="p-3 bg-[#DCE8F4]/40 rounded-lg mb-6">
+<span class="block text-[11px] font-bold uppercase tracking-wider text-[#014C8F]">Best for</span>
+<p class="text-xs text-[#0A2540] mt-0.5">Serious players seeking maximum rating acceleration and individualized diagnostic feedback.</p>
+</div>
+</div>
+<a class="w-full inline-flex items-center justify-center bg-[#E97619] text-[#0A2540] font-semibold text-sm py-3 rounded-xl hover:bg-[#014C8F] hover:text-[#EFDDC9] transition-colors" href="#assessment">
+            Explore 1-on-1 Mentorship
+          </a>
+</div>
+<!-- Format 2: Small Group Cohorts -->
+<div class="bg-white rounded-xl p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow relative ring-1 ring-[#014C8F]/15">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center mb-6">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[2]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<rect height="14" rx="2" ry="2" width="20" x="2" y="3"></rect>
+<line x1="8" x2="16" y1="21" y2="21"></line>
+<line x1="12" x2="12" y1="17" y2="21"></line>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#014C8F] mb-3">Small Group Cohorts</h3>
+<p class="font-body-sm text-body-sm text-[#0A2540] mb-6">
+              Collaborative 4-player analytical pods tackling complex tactical themes with peer debate and master guidance.
+            </p>
+<ul class="space-y-3 mb-6 text-sm text-[#0A2540]">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-sm text-[#014C8F] mt-0.5">check_circle</span>
+<span>Weekly 4-student tactical masterclasses</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-sm text-[#014C8F] mt-0.5">check_circle</span>
+<span>Structured calculation sprints &amp; Kotov trees</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-sm text-[#014C8F] mt-0.5">check_circle</span>
+<span>Peer sparring tournaments with GM commentary</span>
+</li>
+</ul>
+<div class="p-3 bg-[#DCE8F4]/40 rounded-lg mb-6">
+<span class="block text-[11px] font-bold uppercase tracking-wider text-[#014C8F]">Best for</span>
+<p class="text-xs text-[#0A2540] mt-0.5">Motivated improvers who thrive in collaborative, high-accountability cohort environments.</p>
+</div>
+</div>
+<a class="w-full inline-flex items-center justify-center bg-[#E97619] text-[#0A2540] font-semibold text-sm py-3 rounded-xl hover:bg-[#014C8F] hover:text-[#EFDDC9] transition-colors" href="#assessment">
+            View Cohort Schedule
+          </a>
+</div>
+<!-- Format 3: Asynchronous Game Reviews -->
+<div class="bg-white rounded-xl p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="w-12 h-12 rounded-xl bg-[#DCE8F4] text-[#014C8F] flex items-center justify-center mb-6">
+<svg class="w-6 h-6 stroke-current fill-none stroke-[2]" stroke-linecap="round" stroke-linejoin="round" viewbox="0 0 24 24">
+<polygon points="23 7 16 12 23 17 23 7"></polygon>
+<rect height="14" rx="2" ry="2" width="15" x="1" y="5"></rect>
+</svg>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#014C8F] mb-3">Asynchronous Reviews</h3>
+<p class="font-body-sm text-body-sm text-[#0A2540] mb-6">
+              Deep, master-recorded video reviews and annotated notation files delivered straight to your inbox each week.
+            </p>
+<ul class="space-y-3 mb-6 text-sm text-[#0A2540]">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-sm text-[#014C8F] mt-0.5">check_circle</span>
+<span>Deep 15-minute video breakdown per classical game</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-sm text-[#014C8F] mt-0.5">check_circle</span>
+<span>Fully annotated PGN files with engine &amp; human notes</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-sm text-[#014C8F] mt-0.5">check_circle</span>
+<span>Weekly diagnostic tactical leak audit report</span>
+</li>
+</ul>
+<div class="p-3 bg-[#DCE8F4]/40 rounded-lg mb-6">
+<span class="block text-[11px] font-bold uppercase tracking-wider text-[#014C8F]">Best for</span>
+<p class="text-xs text-[#0A2540] mt-0.5">Busy professionals and tournament players wanting master oversight on their own schedule.</p>
+</div>
+</div>
+<a class="w-full inline-flex items-center justify-center bg-[#E97619] text-[#0A2540] font-semibold text-sm py-3 rounded-xl hover:bg-[#014C8F] hover:text-[#EFDDC9] transition-colors" href="#assessment">
+            Submit Games for Review
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Final Call-to-Action Band (Royal Blue #014C8F background, cream text) -->
+<section class="relative w-full bg-[#014C8F] text-[#EFDDC9] px-margin-mobile lg:px-margin py-space-2xl overflow-hidden" id="assessment">
+<!-- Subtle chess rank background accent -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none flex justify-around text-8xl font-mono items-center select-none">
+<span>a</span><span>b</span><span>c</span><span>d</span><span>e</span><span>f</span><span>g</span><span>h</span>
+</div>
+<div class="relative max-w-4xl mx-auto flex flex-col items-center text-center gap-6">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EFDDC9]/10 text-xs font-semibold uppercase tracking-widest text-[#EFDDC9]">
+        Complimentary Assessment
+      </span>
+<h2 class="font-headline-lg text-headline-lg lg:text-display text-[#EFDDC9] tracking-tight">
+        Not sure which tier or format fits your goals?
+      </h2>
+<p class="font-body-lg text-body-lg text-[#EFDDC9]/90 max-w-2xl font-light">
+        Take our complimentary 30-minute diagnostic session. A master coach will review your recent games and pinpoint your optimal starting point with customized training milestones.
+      </p>
+<div class="pt-2 flex flex-col sm:flex-row items-center gap-4">
+<a class="inline-flex items-center justify-center bg-[#E97619] text-[#0A2540] font-bold text-base px-8 py-4 rounded-xl hover:bg-white transition-all transform active:scale-95 shadow-md" href="#">
+          Book a Free Assessment
+        </a>
+</div>
+<div class="flex items-center gap-3 text-xs text-[#EFDDC9]/70 pt-2 font-mono">
+<span class="flex items-center gap-1.5">
+<svg class="w-4 h-4 stroke-current fill-none stroke-[2]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          No credit card required
+        </span>
+<span>•</span>
+<span class="flex items-center gap-1.5">
+<svg class="w-4 h-4 stroke-current fill-none stroke-[2]" viewbox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Comprehensive candidate-move diagnostic
+        </span>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-[#014C8F] text-secondary-fixed"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-2xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="Next Move Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBCm9ilanvp09xDDIDPnCmDunp516WlmRTdsrCKyxYvx8tZWc_E-dAArBg6TSFHTRdeVikeyQB1FCkv1Zk6BWmdTPpIjxl1rGP8UoSltdwJMKx3v_scsxJPbla0fXhzgCMFQlZpQENVqXvBF2FP1jKdY3hZCdfGJyLN7EhE0ZbBeFdSH1tzWuerXGM_yoRZ0ODe4rae-dR2pt1qLcat3w42b2WNsHF_-G5JCW4TqNao"/><span class="font-title text-title text-primary-fixed uppercase tracking-wider">Next Move</span></div><p class="font-body-sm text-body-sm text-secondary-fixed/90 leading-relaxed">Elite chess pedagogy through avant-garde methodology. Structural calculation, analytical discipline, and grandmaster mentorship engineered for mastery.</p><div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="YouTube" class="w-9 h-9 rounded-xl bg-on-secondary-fixed-variant flex items-center justify-center text-primary-fixed hover:bg-primary-container hover:text-[#0A2540] transition-colors" href="https://youtube.com" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">smart_display</span></a><a aria-label="Lichess" class="w-9 h-9 rounded-xl bg-on-secondary-fixed-variant flex items-center justify-center text-primary-fixed hover:bg-primary-container hover:text-[#0A2540] transition-colors" href="https://lichess.org" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">grid_view</span></a><a aria-label="Chess.com" class="w-9 h-9 rounded-xl bg-on-secondary-fixed-variant flex items-center justify-center text-primary-fixed hover:bg-primary-container hover:text-[#0A2540] transition-colors" href="https://chess.com" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">chess</span></a></div></div><div class="space-y-space-md"><h4 class="font-headline-sm text-body-md text-primary-fixed tracking-wide uppercase">Navigation</h4><ul class="space-y-space-sm font-body-sm text-body-sm"><li class="flex items-center"><a class="text-secondary-fixed hover:text-primary-fixed transition-colors" data-path="programs" href="#">Master Coaching Programs</a></li><li class="flex items-center"><a class="text-secondary-fixed hover:text-primary-fixed transition-colors" data-path="about" href="#">About Our Mentors</a></li><li class="flex items-center"><a class="text-secondary-fixed hover:text-primary-fixed transition-colors" data-path="pricing" href="#">Tuition &amp; Tiers</a></li><li class="flex items-center"><a class="text-secondary-fixed hover:text-primary-fixed transition-colors" data-path="resources" href="#">Opening Repertoires</a></li></ul></div><div class="space-y-space-md"><h4 class="font-headline-sm text-body-md text-primary-fixed tracking-wide uppercase">Legal &amp; Trust</h4><ul class="space-y-space-sm font-body-sm text-body-sm"><li class="flex items-center"><a class="text-secondary-fixed hover:text-primary-fixed transition-colors" data-path="terms" href="#">Terms of Curriculum</a></li><li class="flex items-center"><a class="text-secondary-fixed hover:text-primary-fixed transition-colors" data-path="privacy" href="#">Privacy Policy</a></li><li class="flex items-center"><a class="text-secondary-fixed hover:text-primary-fixed transition-colors" data-path="ethics" href="#">Fair Play Protocols</a></li><li class="flex items-center"><a class="text-secondary-fixed hover:text-primary-fixed transition-colors" data-path="contact" href="#">Coaching Inquiries</a></li></ul></div><div class="space-y-space-md"><h4 class="font-headline-sm text-body-md text-primary-fixed tracking-wide uppercase">The Grandmaster Digest</h4><p class="font-body-sm text-body-sm text-secondary-fixed/90">Curated deep-dive game analyses, theoretical novelties, and endgame strategy delivered weekly.</p><form class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><input class="flex-1 bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-space-md py-space-sm rounded-xl outline-none focus:ring-1 focus:ring-primary-container text-primary-fixed-dim placeholder:text-on-secondary-container" placeholder="Grandmaster candidate email" type="email"/><button class="bg-primary-container bg-[#E97619] text-[#0A2540] font-label-md text-label-md uppercase px-space-md py-space-sm rounded-xl hover:bg-white hover:text-surface-container-lowest transition-colors font-semibold" type="button">Join</button></div><span class="font-label-sm text-label-sm text-secondary-fixed/70">Strictly zero spam. Unsubscribe anytime.</span></form></div></div><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-space-md border-t border-on-secondary-fixed-variant/50 flex flex-col md:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-secondary-fixed/70"><span>© 2025 Next Move Academy. Precision chess engineering.</span><span>Calculated Strategy • Absolute Discipline</span></div></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
+<script src="../js/animations.js"></script>
+</body></html>
