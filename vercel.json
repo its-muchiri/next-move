@@ -1,0 +1,12 @@
+{
+  "routes": [
+    { "src": "/", "dest": "/next_move_premium_online_chess_coaching_homepage/code.html" },
+    { "src": "/programs", "dest": "/coaching_programs_next_move/code.html" },
+    { "src": "/about", "dest": "/about_philosophy_next_move/code.html" },
+    { "src": "/pricing", "dest": "/pricing_booking_next_move/code.html" },
+    { "src": "/resources", "dest": "/next_move_free_chess_resources/code.html" },
+    { "src": "/contact", "dest": "/contact_next_move/code.html" },
+    { "src": "/js/(.*)", "dest": "/js/$1" },
+    { "src": "/(.*)", "dest": "/next_move_premium_online_chess_coaching_homepage/code.html" }
+  ]
+}
